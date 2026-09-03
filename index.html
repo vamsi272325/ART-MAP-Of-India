@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Art Through Time | Interactive Timeline</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+</head>
+<body>
+<header class="hero">
+  <nav>
+  <div class="assignment-badge"><span class="cap">🎓</span> ACADEMIC ASSIGNMENT</div>
+  <div class="student-info"><strong>Student:</strong> D.M.N.VAMSI KUMAR</div>
+  <span class="separator">•</span>
+  <div class="student-info"><strong>Reg No:</strong> RA2411030010076</div>
+  <span class="separator">•</span>
+  <div class="student-info"><strong>Department:</strong> CSE Cyber Security</div>
+  <div class="nav-links">
+    <a href="#project">Project</a><a href="#artmap">Art Map</a><a href="#artforms">Art Forms</a><a href="#artists">Artists</a><a href="#journey">Journey</a><a href="#timeline">Timeline</a><a href="#gallery">Gallery</a><a href="#about">About</a>
+  </div>
+</nav>
+  <div class="hero-content">
+    <p class="eyebrow">AN INTERACTIVE JOURNEY</p>
+    <h1>Indian Art<br><em>Through Time</em></h1>
+    <p>Explore remarkable artifacts, sculptures and architectural masterpieces from ancient India to the modern era.</p>
+    <a class="btn" href="#timeline">Explore the Timeline ↓</a>
+  </div>
+</header>
+
+<main>
+<section class="intro">
+  <p class="eyebrow">FROM 2500 BCE TO THE 20TH CENTURY</p>
+  <h2>A civilization told through art</h2>
+  <p>Travel across major periods of Indian art history. Click any artifact to uncover its story, materials, symbolism and historical context.</p>
+</section>
+
+
+<section id="project" class="project-section">
+  <div class="section-head">
+    <div><p class="eyebrow">PROJECT OVERVIEW</p><h2>Interactive Timeline with Artifacts</h2></div>
+  </div>
+  <div class="project-grid">
+    <div class="project-intro">
+      <h3>Indian Art History</h3>
+      <p>This educational website presents important periods of Indian art through an interactive timeline. Select an artifact to view its image, date, place of origin, material, historical background and importance.</p>
+      <div class="feature-list">
+        <span>✓ Interactive timeline</span><span>✓ Artifact images</span><span>✓ Clickable details</span>
+        <span>✓ Historical context</span><span>✓ Gallery & filters</span><span>✓ Responsive design</span>
+      </div>
+    </div>
+    <div class="requirements-table">
+      <div class="req-row req-head"><b>Period</b><b>Artifact</b><b>Date</b></div>
+      <div class="req-row"><span>Indus Valley</span><span>Dancing Girl</span><span>c. 2500 BCE</span></div>
+      <div class="req-row"><span>Mauryan</span><span>Lion Capital of Ashoka</span><span>c. 250 BCE</span></div>
+      <div class="req-row"><span>Gupta</span><span>Buddha Statue</span><span>4th–6th c. CE</span></div>
+      <div class="req-row"><span>Chola</span><span>Nataraja</span><span>c. 11th c. CE</span></div>
+      <div class="req-row"><span>Medieval India</span><span>Konark Sun Temple</span><span>13th c. CE</span></div>
+      <div class="req-row"><span>Mughal</span><span>Taj Mahal</span><span>17th c. CE</span></div>
+      <div class="req-row"><span>Modern India</span><span>Bengal School</span><span>19th–20th c.</span></div>
+    </div>
+  </div>
+  <div class="click-guide">
+    <div><strong>🖼️ Image</strong><small>Virtual replica / artwork</small></div>
+    <div><strong>📅 Period & Date</strong><small>Historical time period</small></div>
+    <div><strong>📍 Place</strong><small>Origin or location</small></div>
+    <div><strong>🎨 Material</strong><small>Art form and medium</small></div>
+    <div><strong>📖 Background</strong><small>Historical context</small></div>
+    <div><strong>⭐ Importance</strong><small>Why it matters</small></div>
+  </div>
+</section>
+
+
+<section id="artmap" class="map-section">
+  <div class="section-head">
+    <div><p class="eyebrow">INTERACTIVE ART MAP</p><h2>Indian Art Across the Map</h2></div>
+  </div>
+  <p class="map-lead">Explore important places connected with Indian art history. Click a marker to see the location, artwork, image, art movement and historical context.</p>
+  <div class="map-layout">
+    <div id="artMap" aria-label="Interactive map of important Indian art locations"></div>
+    <aside class="map-list">
+      <h3>Key locations</h3>
+      <div id="locationList"></div>
+    </aside>
+  </div>
+  <p class="map-credit">Map data © OpenStreetMap contributors. Location coordinates are approximate and intended for educational use.</p>
+</section>
+
+
+<section id="artforms" class="explore-section">
+  <div class="section-head"><div><p class="eyebrow">EXPLORE INDIAN ART</p><h2>Art forms & traditions</h2></div></div>
+  <div class="explore-grid">
+    <button class="explore-card" data-filter="Sculpture"><span>◈</span><b>Sculpture</b><small>Bronze, stone & sacred forms</small></button>
+    <button class="explore-card" data-filter="Architecture"><span>⌂</span><b>Architecture</b><small>Temples, monuments & heritage</small></button>
+    <button class="explore-card" data-filter="Painting"><span>✦</span><b>Painting</b><small>Murals, court art & modern schools</small></button>
+    <button class="explore-card" data-filter="Metalwork"><span>◇</span><b>Metalwork</b><small>Traditional casting & craft</small></button>
+    <button class="explore-card" data-filter="Folk & Tribal"><span>✺</span><b>Folk & Tribal</b><small>Regional visual traditions</small></button>
+    <button class="explore-card" data-filter="Textiles"><span>▤</span><b>Textiles</b><small>Weaving, dyeing & ornament</small></button>
+  </div>
+</section>
+
+<section id="artists" class="artists-section">
+  <div class="section-head"><div><p class="eyebrow">PEOPLE BEHIND THE ART</p><h2>Artists & traditions</h2></div></div>
+  <div class="artist-grid">
+    <article><div class="artist-mark">AT</div><h3>Abanindranath Tagore</h3><p>Bengal School • Modern India</p><small>Known for helping shape a modern Indian visual language rooted in indigenous traditions.</small></article>
+    <article><div class="artist-mark">RB</div><h3>Raja Ravi Varma</h3><p>Academic & Modern Indian Art</p><small>Known for combining European academic techniques with subjects from Indian mythology and culture.</small></article>
+    <article><div class="artist-mark">CL</div><h3>Chola Bronze Tradition</h3><p>South India • Sculpture</p><small>The Chola ateliers became renowned for sophisticated lost-wax bronze images, including Nataraja.</small></article>
+    <article><div class="artist-mark">AC</div><h3>Ajanta Painters</h3><p>Ancient India • Murals</p><small>Anonymous artists created expressive Buddhist narratives and figures across the cave complex.</small></article>
+  </div>
+</section>
+
+<section id="journey" class="journey-section">
+  <div class="section-head"><div><p class="eyebrow">GUIDED JOURNEY</p><h2>Trace the artistic journey</h2></div></div>
+  <div class="journey">
+    <div class="journey-step active"><span>01</span><b>Ancient foundations</b><small>Mohenjo-daro → Ajanta</small></div>
+    <div class="journey-step"><span>02</span><b>Classical & sacred art</b><small>Sarnath → South India</small></div>
+    <div class="journey-step"><span>03</span><b>Medieval monuments</b><small>Konark → Agra</small></div>
+    <div class="journey-step"><span>04</span><b>Modern identity</b><small>Bengal → contemporary India</small></div>
+  </div>
+</section>
+
+<section id="timeline" class="timeline-section">
+  <div class="section-head">
+    <div><p class="eyebrow">THE TIMELINE</p><h2>Seven moments in Indian art</h2></div>
+    <div class="controls"><button id="prev">←</button><button id="next">→</button></div>
+  </div>
+  <div class="timeline-wrap">
+    <div class="line"></div>
+    <div class="timeline" id="timelineCards"></div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery-section">
+  <div class="section-head"><div><p class="eyebrow">ARTIFACT GALLERY</p><h2>Explore the collection</h2></div></div>
+  <div class="filters" id="filters"></div>
+  <div class="gallery" id="galleryGrid"></div>
+</section>
+
+<section id="about" class="about">
+  <div><p class="eyebrow">ABOUT THE PROJECT</p><h2>Art is a record of civilization.</h2></div>
+  <div><p>This interactive educational project explores the geographic spread and historical development of Indian art. It combines a map, artifact gallery and timeline so students can connect places, people, art forms and periods.</p>
+  <p><strong>Student:</strong> D.M.N.VAMSI KUMAR<br><strong>Reg No:</strong> RA2411030010076<br><strong>Department:</strong> CSE Cyber Security</p>
+  <p class="source-note">Reference material includes museum and heritage resources. Image licenses should be checked on their original source pages before redistribution.</p></div>
+</section>
+</main>
+
+<footer>Interactive Timeline with Artifacts • Indian Art History • CO1</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="close">×</button>
+    <div id="modalArt"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
